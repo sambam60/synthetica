@@ -236,11 +236,19 @@ export default function Home() {
             <p className="text-xs tracking-[0.5em] text-zinc-500" style={{ fontWeight: 100 }}>
               A PRODUCTION BY
             </p>
-            <img
-              src="/images/fps_logo.png"
-              alt="Cardiff Film Production Society logo"
-              className="mx-auto mt-4 max-h-42 w-auto"
-            />
+            <a
+              href="https://www.instagram.com/cardiffuni.fps/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block focus:outline-none"
+              aria-label="Cardiff Film Production Society Instagram"
+            >
+              <img
+                src="/images/fps_logo.png"
+                alt="Cardiff Film Production Society logo"
+                className="mx-auto mt-4 max-h-42 w-auto transition-opacity hover:opacity-80"
+              />
+            </a>
           </FadeInSection>
         </div>
       </section>
