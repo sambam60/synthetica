@@ -40,12 +40,15 @@ export default function Home() {
         </h1>
 
         {/* Tagline */}
-        <p 
-          className="animate-fade-in delay-2000 mt-6 text-center text-sm tracking-[0.4em] text-zinc-400 opacity-0 md:text-base"
+        <a
+          href="https://www.youtube.com/watch?v=srHYi2L1zN4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-fade-in delay-2000 mt-6 text-center text-sm tracking-[0.2em] text-zinc-400 opacity-0 md:text-base inline-block hover:text-zinc-100 transition-colors"
           style={{ fontWeight: 100 }}
         >
-          A NEO-NOIR SHORT FILM
-        </p>
+          WATCH THE TEASER
+        </a>
 
         {/* Scroll indicator */}
         {showContent && (
@@ -97,10 +100,21 @@ export default function Home() {
           </p>
         </FadeInSection>
         <FadeInSection delay={150}>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:gap-8">
-            <span className="text-2xl tracking-[0.2em] text-white md:text-4xl" style={{ fontWeight: 200 }}>
-              MEMORY, GRIEF AND IDENTITY
-            </span>
+          <div className="mt-8 flex w-full flex-wrap items-center justify-center">
+            {["MEMORY,", "GRIEF", "AND", "IDENTITY"].map((word, i) => (
+              <span
+                key={i}
+                className="block text-center text-2xl tracking-[0.2em] text-white md:text-4xl"
+                style={{
+                  fontWeight: 200,
+                  marginRight: i !== 3 ? "0.6em" : 0,
+                  wordBreak: "break-word",
+                  minWidth: "min-content",
+                }}
+              >
+                {word}
+              </span>
+            ))}
           </div>
         </FadeInSection>
       </section>
