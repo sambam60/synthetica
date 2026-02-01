@@ -181,7 +181,7 @@ export default function Home() {
               <CharacterCard
                 name="DR. MAREK"
                 role="Supporting"
-                description="An nderground cyberware surgeon. Ada's trusted contact with technical expertise."
+                description="An underground cyberware surgeon. Ada's trusted contact with technical expertise."
               />
             </FadeInSection>
             
