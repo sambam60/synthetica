@@ -44,8 +44,8 @@ export default function Home() {
           href="https://www.youtube.com/watch?v=srHYi2L1zN4"
           target="_blank"
           rel="noopener noreferrer"
-          className="animate-fade-in delay-2000 mt-6 text-center text-sm tracking-[0.2em] text-zinc-400 opacity-0 md:text-base inline-block hover:text-zinc-100 transition-colors"
-          style={{ fontWeight: 100 }}
+          className="animate-fade-in delay-2000 mt-6 text-center text-base tracking-[0.2em] text-zinc-400 opacity-0 md:text-lg inline-block hover:text-zinc-100 transition-colors"
+          style={{ fontWeight: 200 }}
         >
           WATCH THE TEASER
         </a>
@@ -53,7 +53,7 @@ export default function Home() {
         {/* Scroll indicator */}
         {showContent && (
           <div className="animate-fade-in absolute bottom-8 flex flex-col items-center gap-2">
-            <span className="text-xs tracking-widest text-zinc-500" style={{ fontWeight: 100 }}>
+            <span className="text-sm tracking-widest text-zinc-500" style={{ fontWeight: 200 }}>
               SCROLL
             </span>
             <div className="animate-pulse-slow h-8 w-px bg-gradient-to-b from-zinc-500 to-transparent" />
@@ -65,22 +65,22 @@ export default function Home() {
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 py-24">
         <div className="mx-auto max-w-2xl">
           <FadeInSection>
-            <h2 className="mb-8 text-center text-xs tracking-[0.5em] text-zinc-500" style={{ fontWeight: 100 }}>
+            <h2 className="mb-8 text-center text-sm tracking-[0.5em] text-zinc-500" style={{ fontWeight: 200 }}>
               SYNOPSIS
             </h2>
           </FadeInSection>
           <FadeInSection delay={100}>
-            <p className="text-center text-lg leading-relaxed text-zinc-200 md:text-xl" style={{ fontWeight: 200 }}>
+            <p className="text-center text-xl leading-relaxed text-zinc-200 md:text-2xl" style={{ fontWeight: 200 }}>
               Ada, a retired hacker living quietly as an art curator, discovers an illegal neural implant in their head after experiencing dangerous memory glitches.
             </p>
           </FadeInSection>
           <FadeInSection delay={200}>
-            <p className="mt-6 text-center text-lg leading-relaxed text-zinc-200 md:text-xl" style={{ fontWeight: 200 }}>
+            <p className="mt-6 text-center text-xl leading-relaxed text-zinc-200 md:text-2xl" style={{ fontWeight: 200 }}>
               When an underground surgeon can&apos;t safely remove it, Ada is forced to accept one last job: infiltrate the corporation that created the device.
             </p>
           </FadeInSection>
           <FadeInSection delay={300}>
-            <p className="mt-6 text-center text-lg leading-relaxed text-zinc-300 md:text-xl" style={{ fontWeight: 200 }}>
+            <p className="mt-6 text-center text-xl leading-relaxed text-zinc-300 md:text-2xl" style={{ fontWeight: 200 }}>
               As the mission unfolds, Ada must confront the truth about their forgotten past and the real purpose of the technology buried in their mind.
             </p>
           </FadeInSection>
@@ -93,8 +93,8 @@ export default function Home() {
       <section className="flex min-h-[10vh] flex-col items-center justify-center px-6 py-24">
         <FadeInSection>
           <p 
-            className="text-center text-2xl tracking-wide text-zinc-400 md:text-3xl" 
-            style={{ fontWeight: 100 }}
+            className="text-center text-3xl tracking-wide text-zinc-400 md:text-4xl" 
+            style={{ fontWeight: 200 }}
           >
             A story about...
           </p>
@@ -104,7 +104,7 @@ export default function Home() {
             {["MEMORY,", "GRIEF", "AND", "IDENTITY"].map((word, i) => (
               <span
                 key={i}
-                className="block text-center text-2xl tracking-[0.2em] text-white md:text-4xl"
+                className="block text-center text-3xl tracking-[0.2em] text-white md:text-5xl"
                 style={{
                   fontWeight: 200,
                   marginRight: i !== 3 ? "0.6em" : 0,
@@ -124,10 +124,10 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-4xl gap-12 md:grid-cols-3">
           <FadeInSection>
             <div className="text-center">
-              <h3 className="text-xs tracking-[0.4em] text-zinc-500" style={{ fontWeight: 100 }}>
+              <h3 className="text-sm tracking-[0.4em] text-zinc-500" style={{ fontWeight: 200 }}>
                 GENRE
               </h3>
-              <p className="mt-3 text-xl text-white" style={{ fontWeight: 200 }}>
+              <p className="mt-3 text-2xl text-white" style={{ fontWeight: 200 }}>
                 Neo-Noir
               </p>
             </div>
@@ -135,10 +135,10 @@ export default function Home() {
           
           <FadeInSection delay={100}>
             <div className="text-center">
-              <h3 className="text-xs tracking-[0.4em] text-zinc-500" style={{ fontWeight: 100 }}>
+              <h3 className="text-sm tracking-[0.4em] text-zinc-500" style={{ fontWeight: 200 }}>
                 RUNTIME
               </h3>
-              <p className="mt-3 text-xl text-white" style={{ fontWeight: 200 }}>
+              <p className="mt-3 text-2xl text-white" style={{ fontWeight: 200 }}>
                 ~25 Minutes
               </p>
             </div>
@@ -146,10 +146,10 @@ export default function Home() {
           
           <FadeInSection delay={200}>
             <div className="text-center">
-              <h3 className="text-xs tracking-[0.4em] text-zinc-500" style={{ fontWeight: 100 }}>
+              <h3 className="text-sm tracking-[0.4em] text-zinc-500" style={{ fontWeight: 200 }}>
                 FORMAT
               </h3>
-              <p className="mt-3 text-xl text-white" style={{ fontWeight: 200 }}>
+              <p className="mt-3 text-2xl text-white" style={{ fontWeight: 200 }}>
                 Short Film
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
       <section className="px-6 py-24">
         <div className="mx-auto max-w-4xl">
           <FadeInSection>
-            <h2 className="mb-16 text-center text-xs tracking-[0.5em] text-zinc-500" style={{ fontWeight: 100 }}>
+            <h2 className="mb-16 text-center text-sm tracking-[0.5em] text-zinc-500" style={{ fontWeight: 200 }}>
               CHARACTERS
             </h2>
           </FadeInSection>
@@ -173,7 +173,7 @@ export default function Home() {
               <CharacterCard
                 name="ADA"
                 role="Lead"
-                description="Former hacker/operative turned art curator. Withdrawn, haunted by lost memories, skilled but cautious."
+                description="Former hacker/operative. Withdrawn, haunted by lost memories, skilled and cautious."
               />
             </FadeInSection>
             
@@ -181,7 +181,7 @@ export default function Home() {
               <CharacterCard
                 name="DR. MAREK"
                 role="Supporting"
-                description="Underground cyberware surgeon. Ada's trusted contact with technical expertise. Conveys trustworthiness and concern."
+                description="An nderground cyberware surgeon. Ada's trusted contact with technical expertise."
               />
             </FadeInSection>
             
@@ -189,7 +189,7 @@ export default function Home() {
               <CharacterCard
                 name="MARCUS"
                 role="Supporting Lead"
-                description="Nervous rebel turned traitor. Conflicted, with nervous energy. Ultimately betrays Ada."
+                description="A nervous rebel working with an insurgent group that recruits Ada to infiltrate the corporation."
               />
             </FadeInSection>
           </div>
@@ -202,7 +202,7 @@ export default function Home() {
       <section className="px-6 py-24">
         <div className="mx-auto max-w-2xl">
           <FadeInSection>
-            <h2 className="mb-16 text-center text-xs tracking-[0.5em] text-zinc-500" style={{ fontWeight: 100 }}>
+            <h2 className="mb-16 text-center text-sm tracking-[0.5em] text-zinc-500" style={{ fontWeight: 200 }}>
               CREW
             </h2>
           </FadeInSection>
@@ -233,7 +233,7 @@ export default function Home() {
       <section className="px-6 py-24">
         <div className="mx-auto max-w-2xl text-center">
           <FadeInSection>
-            <p className="text-xs tracking-[0.5em] text-zinc-500" style={{ fontWeight: 100 }}>
+            <p className="text-sm tracking-[0.5em] text-zinc-500" style={{ fontWeight: 200 }}>
               A PRODUCTION BY
             </p>
             <a
@@ -254,18 +254,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="flex flex-col items-center px-6 py-16">
-        <h2 
-          className="text-center"
-          style={{ 
-            fontFamily: "'Adversal', sans-serif",
-            fontSize: "clamp(1.5rem, 6vw, 3rem)",
-            letterSpacing: "0.2em",
-          }}
-        >
-          Synthetica
-        </h2>
-        <p className="mt-4 text-xs tracking-widest text-zinc-600" style={{ fontWeight: 100 }}>
+      <footer className="flex flex-col items-center px-6 py-8">
+        <p className="mt-4 text-sm tracking-widest text-zinc-600" style={{ fontWeight: 200 }}>
           COMING AUTUMN 2026
         </p>
       </footer>
@@ -340,13 +330,13 @@ function CharacterCard({
 }) {
   return (
     <div className="text-center">
-      <h3 className="text-lg tracking-[0.2em] text-white" style={{ fontWeight: 300 }}>
+      <h3 className="text-xl tracking-[0.2em] text-white" style={{ fontWeight: 300 }}>
         {name}
       </h3>
-      <p className="mt-1 text-xs tracking-[0.3em] text-zinc-500" style={{ fontWeight: 100 }}>
+      <p className="mt-1 text-sm tracking-[0.3em] text-zinc-500" style={{ fontWeight: 200 }}>
         {role.toUpperCase()}
       </p>
-      <p className="mt-4 text-sm leading-relaxed text-zinc-400" style={{ fontWeight: 200 }}>
+      <p className="mt-4 text-base leading-relaxed text-zinc-400" style={{ fontWeight: 200 }}>
         {description}
       </p>
     </div>
@@ -357,10 +347,10 @@ function CharacterCard({
 function CrewMember({ role, name }: { role: string; name: string }) {
   return (
     <div className="flex items-center justify-between border-b border-zinc-900 py-3">
-      <span className="text-sm text-zinc-500" style={{ fontWeight: 100 }}>
+      <span className="text-base text-zinc-500" style={{ fontWeight: 200 }}>
         {role}
       </span>
-      <span className="text-sm text-white" style={{ fontWeight: 200 }}>
+      <span className="text-base text-white" style={{ fontWeight: 200 }}>
         {name}
       </span>
     </div>
