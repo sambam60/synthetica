@@ -188,7 +188,7 @@ export default function Home() {
             
             <FadeInSection delay={100}>
               <CharacterCard
-                name="DR. MAREK"
+                name="DR. KESSLER"
                 role="Supporting"
                 description="An underground cyberware surgeon. Ada's trusted contact with technical expertise."
               />
