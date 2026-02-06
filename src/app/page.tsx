@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
@@ -49,6 +50,14 @@ export default function Home() {
         >
           WATCH THE TEASER
         </a>
+
+        <Link
+          href="/auditions"
+          className="animate-fade-in delay-2500 mt-4 text-center text-sm tracking-[0.2em] text-zinc-500 opacity-0 inline-block border border-zinc-700 px-6 py-2 hover:border-white hover:text-white transition-all"
+          style={{ fontWeight: 200 }}
+        >
+          AUDITIONS OPEN
+        </Link>
 
         {/* Scroll indicator */}
         {showContent && (
